@@ -1,6 +1,5 @@
-import React from 'react';
 import { Award, Download, BookOpen } from 'lucide-react';
-import { personalInfo } from '../data/personalInfo';
+import { personalInfo, Certification } from '../data/personalInfo';
 
 const CertificationsPage = () => {
   return (
@@ -14,7 +13,7 @@ const CertificationsPage = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {personalInfo.certifications.map((cert, index) => (
+          {personalInfo.certifications.map((cert: Certification, index) => (
             <div
               key={index}
               className="bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:transform hover:scale-[1.03] hover:shadow-2xl"
@@ -28,7 +27,7 @@ const CertificationsPage = () => {
                 <p className="text-indigo-400 text-center mb-4">{cert.issuer}</p>
                 <div className="text-sm text-gray-400 mb-6">
                   <p><strong>Issued:</strong> {cert.issueDate}</p>
-                  {cert.expiryDate && <p><strong>Expires:</strong> {cert.expiryDate}</p>}
+                  {cert.expiryDate != null && <p><strong>Expires:</strong> {cert.expiryDate}</p>}
                   <p className="mt-2">{cert.description}</p>
                 </div>
                 <div className="flex justify-center">
