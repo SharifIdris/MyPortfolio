@@ -1,5 +1,4 @@
-import React from 'react';
-import { Code, BookOpen, Laptop, BarChart4 } from 'lucide-react';
+import { Code, Laptop, BarChart4 } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 const SkillsSection = () => {

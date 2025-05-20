@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Code, Search, Filter } from 'lucide-react';
+import { useState } from 'react';
+import { Search, Filter } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
 
 const ProjectsPage = () => {

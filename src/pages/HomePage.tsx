@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowRight, Download, User, Code, BookOpen, Award } from 'lucide-react';
+import { ArrowRight, Download, User, Code, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import SkillsSection from '../components/SkillsSection';
