@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
