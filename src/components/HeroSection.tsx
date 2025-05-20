@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { personalInfo } from '../data/personalInfo';
@@ -8,7 +9,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const options = {
-      strings: ['Virtual Assistant', 'Python Developer', 'Django Enthusiast', 'Ethical Hacker', 'Problem Solver'],
+      strings: ['Virtual Assistant', 'Python Developer', 'Django Enthusiast', 'Ethical Hacker', 'Problem Solver','Aspiring Data Scientist'],
       typeSpeed: 50,
       backSpeed: 30,
       backDelay: 1500,
